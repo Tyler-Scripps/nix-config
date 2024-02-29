@@ -141,24 +141,25 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-	htop
-	btop
-	git
-	bitwarden
-	tailscale
-	neofetch
-	vscode
-	libsForQt5.kate
-  gnome.dconf-editor
-  chromium
-  vlc
-  mysql-workbench
-  lm_sensors
-  firefox
-  ffmpeg
-  gh
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
+    htop
+    btop
+    git
+    bitwarden
+    tailscale
+    neofetch
+    vscode
+    libsForQt5.kate
+    gnome.dconf-editor
+    chromium
+    vlc
+    mysql-workbench
+    lm_sensors
+    firefox
+    ffmpeg
+    gh
+    mariadb
   ];
 
   # may or may not work
