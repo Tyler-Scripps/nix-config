@@ -173,6 +173,12 @@ in
     };
   };
 
+  # mysql
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
+
   # disable geary email client
   programs.geary.enable = false;
 
