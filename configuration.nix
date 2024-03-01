@@ -94,7 +94,7 @@ in
   users.users.tyler = {
     isNormalUser = true;
     description = "Tyler Scripps";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "openrazer" ];
     packages = with pkgs; [
     #  firefox
     #  thunderbird
