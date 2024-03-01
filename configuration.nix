@@ -11,7 +11,7 @@ in
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       (import "${home-manager}/nixos")
-    ] ++ lib.optional (builtins.pathExists ./nvidia.nix) ./nvidia.nix;
+    ] ++ lib.optional (builtins.pathExists ./desktop.nix) ./desktop.nix;
 
   # enable flakes
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
