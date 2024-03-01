@@ -164,6 +164,7 @@ in
     gh
     mariadb
     steam
+    discord
   ];
 
   # may or may not work
