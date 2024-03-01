@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{lib, config, pkgs, ... }:
 let
   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz";
 in
@@ -11,7 +11,7 @@ in
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       (import "${home-manager}/nixos")
-    ];
+    ] ++ lib.optional (builtins.pathExists ./nvidia.nix) ./nvidia.nix;
 
   # enable flakes
   nix.settings.experimental-features = [ "flakes" "nix-command" ];
@@ -132,6 +132,9 @@ in
       "org/gnome/shell/app-switcher" = {
         "current-workspace-only" = true;
       };
+      "org/gnome/desktop/wm/preferences" = {
+        button-layout = "appmenu:minimize,maximize,close";
+      };
     };
   };
 
@@ -160,6 +163,7 @@ in
     ffmpeg
     gh
     mariadb
+    steam
   ];
 
   # may or may not work
