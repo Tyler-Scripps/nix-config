@@ -167,7 +167,7 @@ in
     discord
   ];
 
-  # may or may not work
+  # may or may not work (doesn't seem to)
   programs.firefox.policies = {
     DisablePocket = true;
     ExtensionSettings = {
