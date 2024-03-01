@@ -54,4 +54,12 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  hardware.openrazer.enable = true; 
+
+  environment.systemPackages = [
+    pkgs.razergenie
+    pkgs.openrazer-daemon
+    pkgs.nvtop
+  ];
+
 }
