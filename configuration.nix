@@ -11,6 +11,7 @@ in
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       (import "${home-manager}/nixos")
+      ./apps.nix
     ] ++ lib.optional (builtins.pathExists ./desktop.nix) ./desktop.nix;
 
   # enable flakes
@@ -140,32 +141,6 @@ in
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #  wget
-    htop
-    btop
-    git
-    bitwarden
-    tailscale
-    neofetch
-    vscode
-    libsForQt5.kate
-    gnome.dconf-editor
-    chromium
-    vlc
-    mysql-workbench
-    lm_sensors
-    firefox
-    ffmpeg
-    gh
-    mariadb
-    steam
-    discord
-  ];
 
   # may or may not work (doesn't seem to)
   programs.firefox.policies = {
