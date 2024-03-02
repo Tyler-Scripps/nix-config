@@ -27,5 +27,6 @@
     gnomeExtensions.caffeine
     gnomeExtensions.freon
     gnomeExtensions.tailscale-status
+    alacritty
   ];
 }
