@@ -127,6 +127,7 @@ in
           "caffeine@patapon.info"
           "freon@UshakovVasilii_Github.yahoo.com"
           "places-menu@gnome-shell-extensions.gcampax.github.com"
+          "tailscale-status@maxgallup.github.com"
         ];
         favorite-apps = ["org.gnome.Nautilus.desktop" "org.gnome.Console.desktop" "firefox.desktop" "gnome-system-monitor.desktop"];
       };
