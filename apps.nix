@@ -22,5 +22,10 @@
     mariadb
     steam
     discord
+    gnomeExtensions.netlabel
+    gnomeExtensions.hibernate-status-button
+    gnomeExtensions.caffeine
+    gnomeExtensions.freon
+    gnomeExtensions.tailscale-status
   ];
 }

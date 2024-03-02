@@ -31,6 +31,9 @@ in
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # keep a copy of current config
+  system.copySystemConfiguration = true;
+
   # Set your time zone.
   time.timeZone = "America/Denver";
 
