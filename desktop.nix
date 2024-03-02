@@ -62,4 +62,6 @@
     pkgs.nvtop
   ];
 
+  # fixes electron apps with nvidia driver
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
