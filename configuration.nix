@@ -125,7 +125,7 @@ in
           "freon@UshakovVasilii_Github.yahoo.com"
           "places-menu@gnome-shell-extensions.gcampax.github.com"
         ];
-        favorite-apps = ["org.gnome.Nautilus.desktop" "org.gnome.Console.desktop" "firefox.desktop"];
+        favorite-apps = ["org.gnome.Nautilus.desktop" "org.gnome.Console.desktop" "firefox.desktop" "gnome-system-monitor.desktop"];
       };
       "org/gnome/mutter" = {
         "dynamic-workspaces" = true;
