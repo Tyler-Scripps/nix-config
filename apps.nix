@@ -28,5 +28,6 @@
     gnomeExtensions.freon
     gnomeExtensions.tailscale-status
     alacritty
+    nvtopPackages.full
   ];
 }
