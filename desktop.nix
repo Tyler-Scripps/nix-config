@@ -6,5 +6,6 @@
   environment.systemPackages = [
     pkgs.openrazer-daemon
     pkgs.polychromatic
+    pkgs.ferium
   ];
 }
