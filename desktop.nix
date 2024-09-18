@@ -7,5 +7,6 @@
     pkgs.openrazer-daemon
     pkgs.polychromatic
     pkgs.ferium
+    pkgs.glxinfo
   ];
 }

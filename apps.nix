@@ -30,5 +30,9 @@
     alacritty
     nvtopPackages.full
     qdirstat
+    python3
+    lshw
+    pciutils
+    vlc
   ];
 }
