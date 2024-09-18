@@ -98,12 +98,15 @@ in
   users.users.tyler = {
     isNormalUser = true;
     description = "Tyler Scripps";
-    extraGroups = [ "networkmanager" "wheel" "openrazer" ];
+    extraGroups = [ "networkmanager" "wheel" "openrazer" "docker"];
     packages = with pkgs; [
     #  firefox
     #  thunderbird
     ];
   };
+
+  virtualisation.docker.enable = true;
+
 
   home-manager.users.tyler = {
     home.stateVersion = "24.05";

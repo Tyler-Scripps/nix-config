@@ -29,5 +29,6 @@
     gnomeExtensions.tailscale-status
     alacritty
     nvtopPackages.full
+    qdirstat
   ];
 }
