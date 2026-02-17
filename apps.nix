@@ -10,7 +10,7 @@
     tailscale
     neofetch
     vscode
-    kdePackages.kate
+    # kdePackages.kate
     pkgs.dconf-editor
     chromium
     vlc
@@ -23,13 +23,13 @@
     steam
     discord
     #gnomeExtensions.net-speed
-    gnomeExtensions.net-speed-simplified
-    gnomeExtensions.hibernate-status-button
-    gnomeExtensions.caffeine
-    gnomeExtensions.freon
-    gnomeExtensions.tailscale-status
-    gnomeExtensions.smart-tiling
-    gnomeExtensions.power-off-options
+    #gnomeExtensions.net-speed-simplified
+    #gnomeExtensions.hibernate-status-button
+    #gnomeExtensions.caffeine
+    #gnomeExtensions.freon
+    #gnomeExtensions.tailscale-status
+    #gnomeExtensions.smart-tiling
+    #gnomeExtensions.power-off-options
     # alacritty
     nvtopPackages.full
     qdirstat
@@ -71,7 +71,8 @@
   ];
   
   services.teamviewer.enable = true;
-
+  programs.fish.enable = true;
+  services.tailscale.enable = true;
   
   hardware.graphics = {
     enable = true;

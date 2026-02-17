@@ -50,8 +50,10 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # services.displayManager.gdm.enable = true;
+  # services.desktopManager.gnome.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -93,9 +95,9 @@
   };
   
   services.flatpak.enable = true;
-  services.tailscale.enable = true;
+  # services.tailscale.enable = true;
   
-  programs.fish.enable = true;
+  # programs.fish.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
